@@ -39,6 +39,7 @@ public class CustomerController {
 		return service.updateCustomer(id, customer);
 
 	}
+	//delete api
 
 	@DeleteMapping("/{id}")
 	public String deleteCustomer(@PathVariable long id) {
