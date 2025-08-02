@@ -37,6 +37,10 @@ public class Service {
 		Customer customer = repo.findById(id).orElseThrow( ()-> new RuntimeException("Customer not found"));
 		return customer;
 	}
+	
+	public void  deleteCustomer(long id) {
+		repo.deleteById(id);
+	}
 
 	
 	
